@@ -1,5 +1,5 @@
 # Hierarchical-RAG
-Hierarchical RAG is a powerful conversational agent that integrates hierarchical topic modeling and the RAG (Retrieval-Augmented Generation) model for interactive, context-aware question answering. Notably, this project distinguishes itself by avoiding the use of vectorization, providing a unique approach to information retrieval. Additionally, it allows users to query any Wikipedia page, expanding the scope of information exploration.
+Hierarchical RAG is a powerful conversational agent that integrates hierarchical topic modeling and the RAG (Retrieval-Augmented Generation) model for interactive, context-aware question answering. Notably, this project distinguishes itself by avoiding the use of vectorization, providing a unique approach to information retrieval. Additionally, it allows users to query any hierarchical data source, expanding the scope of information exploration.
 
 ## Usage
 1. Add your OpenAI API Key at the top of the main file
