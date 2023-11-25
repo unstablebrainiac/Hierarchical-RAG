@@ -5,7 +5,7 @@ Hierarchical RAG is a powerful conversational agent that integrates hierarchical
 1. Add your OpenAI API Key at the top of the main file
 2. Run the script
 3. Try out the example prompts below
-4. Experiment with different queries and topics to witness the system's ability to handle complex conversations.
+4. Experiment with different queries and topics to witness the system's ability to handle complex conversations
 5. Go crazy! (not too much)
 
 ## Example Prompts
@@ -15,4 +15,9 @@ Hierarchical RAG is a powerful conversational agent that integrates hierarchical
 * Compare the airports in Chicago, Berlin, and Copenhagen.
 
 ## Data Sources
-Currently, we fetch all data from Wikipedia. More data sources, such as SEC filings, may be added in the future.
+Currently, we fetch all data from Wikipedia.
+Adding any custom data source requires two APIs:
+* fetch: to fetch data about a topic
+* parse: to generate a topic hierarchy
+
+More data sources, such as SEC filings, will be integrated in the future.
