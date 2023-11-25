@@ -4,7 +4,7 @@ import requests
 import spacy
 
 
-openai_api_key = "enter-openai-key"
+openai_api_key = "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"
 
 local_mode = False
 debug_mode = False
@@ -69,7 +69,7 @@ def llm_call(messages, functions=None, local=False):
 # Create topic heirarchy
 class Topic:
     def __init__(self, name, description, text, level, subtopics):
-        self.name = name.replace(" ", "_")
+        self.name = name.replace(' ', '_').replace('–', '_').replace(',', '_')
         self.description = description
         self.text = text
         self.level = level
@@ -89,7 +89,7 @@ class Topic:
 
 def to_openai_function(topic):
     return {
-        "name": f"tool_{topic.name.replace(' ', '_').replace('–', '_')}",
+        "name": f"tool_{topic.name}",
         "description": f"This content contains information about {topic.description}. "
                        f"Use this tool if you want to answer any questions about {topic.description}.",
         "parameters": {
