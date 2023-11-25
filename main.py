@@ -4,7 +4,7 @@ import requests
 import spacy
 
 
-openai_api_key = "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"
+openai_api_key = "enter your key here"
 
 local_mode = False
 debug_mode = False
