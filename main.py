@@ -66,7 +66,7 @@ def llm_call(messages, functions=None, local=False):
     return result
 
 
-# Create topic heirarchy
+# Create topic hierarchy
 class Topic:
     def __init__(self, name, description, text, level, subtopics):
         self.name = name.replace(' ', '_').replace('–', '_').replace(',', '_')
@@ -195,7 +195,7 @@ def llm_call_with_function_resolution(function_arguments, topic):
 def answer_question(question):
     subjects = extract_subjects(question)
     print(f"Extracted subjects: {subjects}")
-    print("Creating topic heirarchy...")
+    print("Creating topic hierarchy...")
     top_level_topics = create_topics(subjects)
     if debug_mode:
         for topic in top_level_topics:
